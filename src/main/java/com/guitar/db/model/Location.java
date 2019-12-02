@@ -14,7 +14,7 @@ import javax.persistence.OneToMany;
 @Entity
 public class Location {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 
 	private String state;
@@ -22,7 +22,7 @@ public class Location {
 
 	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name="LOCATION_ID")
-	private List<Manufacturer> manufacturers = new ArrayList<Manufacturer>();
+	private List<Manufacturer> manufacturers = new ArrayList<>();
 
 	public String getState() {
 		return state;

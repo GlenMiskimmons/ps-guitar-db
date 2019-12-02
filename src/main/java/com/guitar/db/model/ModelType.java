@@ -14,14 +14,14 @@ import javax.persistence.OneToMany;
 @Entity
 public class ModelType {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 
 	private String name;	
 
 	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name="MODELTYPE_ID")
-	private List<Model> models = new ArrayList<Model>();
+	private List<Model> models = new ArrayList<>();
 
 	public String getName() {
 		return name;

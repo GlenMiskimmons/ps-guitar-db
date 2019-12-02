@@ -14,7 +14,7 @@ import javax.persistence.NamedQuery;
 @NamedQuery(name="Model.findAllModelsByType", query="select m from Model m where m.modelType.name = :name")
 public class Model {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 
 	private String name;	

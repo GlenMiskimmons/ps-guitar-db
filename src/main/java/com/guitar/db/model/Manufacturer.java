@@ -33,7 +33,7 @@ public class Manufacturer {
 	
 	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name="MANUFACTURER_ID")
-	private List<Model> models = new ArrayList<Model>();
+	private List<Model> models = new ArrayList<>();
 
 	@ManyToOne
 	private Location headquarters;

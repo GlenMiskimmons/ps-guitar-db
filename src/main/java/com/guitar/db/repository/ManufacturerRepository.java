@@ -63,10 +63,9 @@ public class ManufacturerRepository {
 	 * Custom finder
 	 */
 	public Manufacturer getManufacturerByName(String name) {
-		Manufacturer man = (Manufacturer)entityManager
+		return (Manufacturer)entityManager
 				.createQuery("select m from Manufacturer m where m.name like :name")
 				.setParameter("name", name + "%").getSingleResult();
-		return man;
 	}
 
 	/**
