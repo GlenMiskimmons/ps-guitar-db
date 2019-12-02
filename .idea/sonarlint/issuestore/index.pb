@@ -27,3 +27,13 @@ m
 =src/test/java/com/guitar/db/ManufacturerPersistenceTests.java,1\9\196dd7e0c480100ac6631ecd31786ab4e3104beb
 f
 6src/test/java/com/guitar/db/ModelPersistenceTests.java,8\7\87c0f59341b136e0547c7ea8c496ab479704a926
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+q
+Asrc/main/java/com/guitar/db/repository/LocationJpaRepository.java,4\7\475e9bbad08aef4237f600eaa30c848d8d2d6d39
+u
+Esrc/main/java/com/guitar/db/repository/ManufacturerJpaRepository.java,7\1\71dd2b447252780908f21d4d038a5e60d0af4f01
+n
+>src/main/java/com/guitar/db/repository/ModelJpaRepository.java,d\e\de06ecfff02821099b6e440c285fd907d3e9e6ed
+r
+Bsrc/main/java/com/guitar/db/repository/ModelTypeJpaRepository.java,e\0\e04293b836fa435ec5cd87ec1153ee5651fc640c
