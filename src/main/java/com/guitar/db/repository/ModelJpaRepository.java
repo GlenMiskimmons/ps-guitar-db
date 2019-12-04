@@ -12,4 +12,6 @@ public interface ModelJpaRepository extends JpaRepository<Model, Long> {
 
     List<Model> findByPriceGreaterThanEqualAndPriceLessThanEqual(BigDecimal minPrice, BigDecimal maxPrice);
 
+    List<Model> findByModelTypeNameIn(List<String> types);
+
 }
